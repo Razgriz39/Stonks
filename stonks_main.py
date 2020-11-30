@@ -19,7 +19,6 @@ plt.show()
 data = tsla.filter(['Close'])
 dataset = data.values
 training_data_len = math.ceil( len(dataset) *.8)
-
 scaler = MinMaxScaler(feature_range=(0, 1)) 
 scaled_data = scaler.fit_transform(dataset)
 
